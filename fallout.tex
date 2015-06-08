@@ -11,6 +11,9 @@
 % Rich selection of colours
 \usepackage[usenames,dvipsnames]{xcolor}
 
+% Strikeout text
+\usepackage{soul}
+
 % Embed images
 \usepackage{graphicx}
 \graphicspath{ {./images/} }
@@ -388,9 +391,14 @@ God Bless Touhou Project. God Bless Gensokyo.
 
 Usually just \textbf{The Nation} or \textbf{10\%ers}.
 
+
 \factionheading{Location}
+
+\img{youkai-mountain}
+
 \textbf{Fortified Citadel} at the summit of \textbf{Youkai Mountain}; Also maintains garrisons at \textbf{Moriya Shrine \& Mountain Lake} and \textbf{GNR Plaza}.
 
+\newpage
 \factionheading{Origins}
 The 10\%ers are an important group of Wasteland survivors originating from the \textbf{Mountain Vaults}. The three Mountain Vaults were originally designed to safeguard separately the kappa, tengu, and human populations, who after the War were meant to work in concert to rapidly reestablish civilization on the Mountain. What happened was something else.
 
@@ -412,7 +420,9 @@ The Religious Order is lead by the Moriya Shrine Maiden, acting as agent of her 
 
 \factionheading{Important personalities}
 \begin{itemize}
-\item[-] Shrine Maiden \textbf{Sanae Kotiya} (full title: ``Human of the Wind Deified''). Runs the Moriya Shrine facility. Although ostensibly human, she is known to have lived since before the war, making her over two-hundred years old, despite maintaining the appearance of teenage girl, likely the result of being a quasi-deity herself. She was one of the few human survivors of pre-War Youkai Mountain, the chance result of mistakenly being assigned to live with the tengu population in Vault \maru{12}, instead of with the other humans in Vault \maru{13}. The failure of Vault \maru{13} took a heavy toll on her, as did the breaking away of the \textbf{Sedevacantist} sect, which removed the human presence on the Mountain almost entirely (and was considered by her to be a personal betrayal). She serves her goddesses Lady Yasaka and Lady Moriya equally, as well as representing the interests of the other minor gods of the Mountain.
+\item[-] Shrine Maiden \textbf{Sanae Kotiya} (full title: ``Human of the Wind Deified''). Runs the Moriya Shrine facility. Although ostensibly human, she is known to have lived since before the war, making her over two-hundred years old, despite maintaining the appearance of teenage girl, likely the result of being a quasi-deity herself. She was one of the few human survivors of pre-War Youkai Mountain, the chance result of mistakenly being assigned to live with the tengu population in Vault \maru{12}, instead of with the other humans in Vault \maru{13}.
+
+The failure of Vault \maru{13} took a heavy toll on her, as did the breaking away of the \textbf{Sedevacantist} sect, which removed the human presence on the Mountain almost entirely (and was considered by her to be a personal betrayal). She serves her goddesses Lady Yasaka and Lady Moriya equally, as well as representing the interests of the other minor gods of the Mountain.
 \item[-] Revered \textbf{Lady Kanako Yasaka} (full title: ``Avatar of Mountains and Lakes''). One of the two chief goddesses of the Nation pantheon, her domain includes the rain and sky. She is considered patron of the sky-based yamabushi and hence is worshiped heavily by this caste.
 \item[-] Revered \textbf{Lady Suwako Moriya} (full title: ``Epitome of Native Gods''). One of the two chief goddesses of the Nation pantheon, her domain includes the earth and mountains. She is considered patron of the mountain-based souhei and hence is worshiped heavily by this caste.
 \item[-] Lady Scrivener \textbf{Minoriko Aki} (full title: ``Symbol of Abundance and Plenty''). A minor harvest deity and younger sister to Shizuha. Although most of the post-War landscape is blasted and incapable of sustaining vegetation, she found a niche for herself in the Citadel's hydroponics lab, aiding the kappa in growing crops. Although a god, she is a member of the Scholarly Order, and not the Religious Order.
@@ -424,13 +434,17 @@ The Religious Order is lead by the Moriya Shrine Maiden, acting as agent of her 
 \end{itemize}
 
 
+\newpage
 \factionheading{Equipment \& Battle}
+
+\img{ablative-shield}
+
 \begin{description}
-\item[Energy Weapons]: Rules of engagement dictate that threats be engaged at range with energy weapons set to \textbf{danmaku}. Only when life is in imminent danger are the weapons to be set to higher levels. 10\%ers on youkai extermination missions, however, are authorized to use lethal force, and do so with relish. The \textbf{Laser Pistol}, \textbf{Laser Rifle}, and \textbf{Gatling Laser} are all widely employed by the Nation.
-\item[Conventional Weapons]: Most conventional weapons are seen as obsolete and inflexible by the Militant Order, though reclaimed and refurbished weapons are commonly found among the kappa population. Nonetheless, a stockpile of conventional arms of all types is housed within the Citadel and catalogued for posterity.
-\item[Explosives]: The Nation has a large stockpile of pre-War \textbf{Frag Grenades} and \textbf{Frag Mines}, but their general use is discouraged, as their stopping power against youkai is suboptimal, and their relative selectivity for killing animal and human life is seen as unconscionable. Less-than-lethal \textbf{Pulse Grenades} and \textbf{Pulse Mines} are favored for use against animal and human threats. A more recent development is the \textbf{Amulet Grenade}, a development of pre-War chaff grenades that uses paper amulets in place of reflective foil. Field testing suggests high efficacy against various forms of beast youkai and feral fairies, while posing minimal danger to human and animal life. Their Scholars are also currently working on the development of a \textbf{Spell Card Mine}, said to be capable of pacifying both human and youkai targets. They are known to also be in the possession of pre-War nuclear armament, though these assets are securely guarded.
-\item[Melee Weapons]: The most commonly used melee weapons are the \textbf{Historied Scimitar}, the \textbf{Historied Yari}, and the \textbf{Historied Naginata}. Though they have difficulty penetrating modern combat armor, they are nevertheless very useful against unarmored youkai. More technologically advanced melee weapons such as the \textbf{Chensaw} and the \textbf{Pile Bunker} pneumatic polearm are also occasionally found, and have their adherents.
-\item[Power Armor]: The 10\%ers are by far the most conspicuous users of \textbf{Power Armor} in the Wasteland. They are pre-War models modified by kappa scientists during the Internment to fit the abhuman characteristics of their wearers. \textbf{Flight Armor} is novel post-War invention, made by stripping down and rebuilding standard Power Armor to be lighter and then adding rockets, whose thrust is directed by the movement of the user's wings. When properly trained in its use, flight speed and maneuverability is improved significantly past one's normal limits. On the Wastes, Nation Power Armor can be readily distinguished from pre-War Power Armor, with its black-and-white color scheme rather than the pre-War olive drab.
+\item[Energy Weapons] Rules of engagement dictate that threats be engaged at range with energy weapons set to \textbf{danmaku}. Only when life is in imminent danger are the weapons to be set to higher levels. 10\%ers on youkai extermination missions, however, are authorized to use lethal force, and do so with relish. The \textbf{Laser Pistol}, \textbf{Laser Rifle}, and \textbf{Gatling Laser} are all widely employed by the Nation.
+\item[Conventional Weapons] Most conventional weapons are seen as obsolete and inflexible by the Militant Order, though reclaimed and refurbished weapons are commonly found among the kappa population. Nonetheless, a stockpile of conventional arms of all types is housed within the Citadel and catalogued for posterity.
+\item[Explosives] The Nation has a large stockpile of pre-War \textbf{Frag Grenades} and \textbf{Frag Mines}, but their general use is discouraged, as their stopping power against youkai is suboptimal, and their relative selectivity for killing animal and human life is seen as unconscionable. Less-than-lethal \textbf{Pulse Grenades} and \textbf{Pulse Mines} are favored for use against animal and human threats. A more recent development is the \textbf{Amulet Grenade}, a development of pre-War chaff grenades that uses paper amulets in place of reflective foil. Field testing suggests high efficacy against various forms of beast youkai and feral fairies, while posing minimal danger to human and animal life. Their Scholars are also currently working on the development of a \textbf{Spell Card Mine}, said to be capable of pacifying both human and youkai targets. They are known to also be in the possession of pre-War nuclear armament, though these assets are securely guarded.
+\item[Melee Weapons] The most commonly used melee weapons are the \textbf{Historied Scimitar}, the \textbf{Historied Yari}, and the \textbf{Historied Naginata}. Though they have difficulty penetrating modern combat armor, they are nevertheless very useful against unarmored youkai. More technologically advanced melee weapons such as the \textbf{Chensaw} and the \textbf{Pile Bunker} pneumatic polearm are also occasionally found, and have their adherents.
+\item[Power Armor] The 10\%ers are by far the most conspicuous users of \textbf{Power Armor} in the Wasteland. They are pre-War models modified by kappa scientists during the Internment to fit the abhuman characteristics of their wearers. \textbf{Flight Armor} is novel post-War invention, made by stripping down and rebuilding standard Power Armor to be lighter and then adding rockets, whose thrust is directed by the movement of the user's wings. When properly trained in its use, flight speed and maneuverability is improved significantly past one's normal limits. On the Wastes, Nation Power Armor can be readily distinguished from pre-War Power Armor, with its black-and-white color scheme rather than the pre-War olive drab.
 \end{description}
 
 
@@ -459,6 +473,73 @@ The Religious Order is lead by the Moriya Shrine Maiden, acting as agent of her 
 \item[-] Scribes wear the less restricting \textbf{10\%er Recon Armor} under their robes when venturing out into the Wastes, though when inside the confines of the Citadel they tend to go without armor entirely, preferring more comfortable jumpsuits, overalls, or coveralls.
 \item[-] Scribes are issued a Laser Pistol as a personal sidearm, and are all trained in their use; however, a rite of passage for kappa is the reconstruction of a firearm from salvaged parts, so they often carry customized and well-maintained conventional small arms, ranging from .38 Special snubnose revolvers to fully-automatic carbines and submachine guns.
 \end{itemize}
+
+
+\begin{commentary}
+\begin{description}
+\item[What about Aya?] Aya is of course a news correspondent for Gensokyo News Radio. GNR is technically a free radio station, so her and Momizi's profile would be included elsewhere.
+\item[Why are they called ``Percenters''?] The original joke was that organization name is a play off the real-life radical black nationalist/religious movement: \emph{The Five-Percent Nation of Gods and Earths}, who just called themselves the ``5\%ers''. You can check \href{http://en.wikipedia.org/wiki/Five-Percent\_Nation}{Wikipedia} for more information, but is it is similar to the Fallout Brotherhood in that their beliefs are a very syncretic and artificial hodgepodge, and shares its history of factionalism. The racial element lends itself to youkai mountain, and I was originally going to carry it further with the GNR DJ being ``Howlin' Mad'' Momizi X, but maybe I'm just amused by the concept of her wearing a doo rag.
+\end{description}
+\end{commentary}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\chapter{G.O.A.S.T.}
+
+\img{renko-mary-night-flight}
+
+``I can't believe it! We're really outside! Holy shit!'' A childish voice, not your own, full of wonder and unused to vulgarity.\\
+``Hush, Ren! What if there's a... mutant bug or something out here?'' Not yours either, female. She sounds more disgusted than scared by the prospect.\\
+It's that dream again. You can't know how old you are, but judging by the childish profiles scaling the rocks in front of you, you must be around eleven or twelve.\\
+``Don't worry!'' The dark-haired girl with the oversize black pre-War hat looks back at the other with a wide smile, which you can make out even through meager green light her Pip-Boy provides. ``Whatever happens, I'll protect you.'' That earnestness and honestly is something only a child is capable of, and without waiting for a reply, returns to her task, and scrambles over the next boulder.\\
+The blonde girl giggles to herself, claps the caked dust and dirt off of her hands and, then turns to you. ``I'm not sure I'm the one who would need protecting. Come on.'' She offers you a hand in a slightly patronizing way, since you're lagging behind, but you can't bring yourself to say that it's because you packed too many supplies in your duffel, in full expectation that either of them would forget their own.\\
+You reach the summit of the crags shortly. Is staring up at the night sky intently. ``I was afraid the stars would be harder to see now because of the soot the bombs kicked up into the stratosphere, but the lack of light pollution more than compensates.'' She looks down at jabs her finger at some spot on the map she's holding. ``It's just like the old sky charts in the Vault records. We should be able to see Human Village due East of this outcropping.'' She points in the direction. You can't see the horizon from the darkness, but the once inky backdrop is turning lighter; it should be dawn soon.
+
+\begin{center}
+\~{} \~{} \~{}
+\end{center}
+
+\emph{``War! Good God y'all! What is it good for? Absolutely nothing, say it again!''}
+
+Pre-War music from the Vault PA system pumps in from the Pip-Boy on the nightstand next to your bed. You don't need to look at its face to tell what time it is; you set it to go off automatically to give you a window just long enough to get to class on time. You move quickly. Sure you slept in your jumpsuit, and your hair is probably a mess, but what matters is that you won't be late. After all, today is an important day, one that determines your future in this \st{coffin} paradise: Today you take the G.O.A.S.T.
+
+Strapping your Pip-Boy on your left arm and turning off the radio, you don your work boots at the door of your single room apartment, and hesitate for a moment as you cross the threshold. You've spent eighteen lonely years in this room. Your mother died in childbirth, and like most other children born in this nearly all female Vault, you had no father, your mother conceiving through \emph{in vitro} fertilization. With the normal method against the rules due to the requirement for genetic counseling, you've never felt lucky to be male surrounded by women. Indeed, you've always felt somewhat expendable in the eyes of the Vault, which of course suits you just fine; no video cameras watching you sleep, no bugs in the wall recording your spoken thoughts.
+
+No time for a bowl of Cirn-Os, you have to move fast. You book it through the corridor, nearly tripping on a maintenance fairy on the way to the classroom. You can hear the sounds of a scuffle to your left. Probably Renko Usami and her ``Tunnel Snakes'' starting trouble again. You'll be late if you check it out, but to be honest the teacher is pretty forgiving if you have an excuse.
+
+\begin{verbatim}
+[ ] It's none of your business; you want to get this exam over with.
+[ ] Someone might be in trouble. Investigate.
+\end{verbatim}
+
+
+\begin{commentary}
+Commentary goes here.
+\end{commentary}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
