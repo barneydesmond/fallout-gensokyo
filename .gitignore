@@ -2,5 +2,7 @@
 *.aux
 *.ps
 *.dvi
+*.out
+*.toc
 .*.swp
 fallout.pdf
