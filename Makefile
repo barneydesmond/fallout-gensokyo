@@ -16,11 +16,15 @@ all: $(TARGET)
 	latex $<
 
 clean:
-	rm -f *.log *.aux $(TARGET) *.ps *.dvi
+	rm -f *.log *.aux $(TARGET) *.pdf *.ps *.dvi *.out
 
 push: all
 	s3cmd put -P fallout.pdf s3://fallout/
 	s3cmd put -P index.html s3://fallout/
+	s3cmd put -P fallout_gensokyo_01-intro.pdf s3://fallout/
+
+intro: Fallout_Gensokyo_01-Intro.pdf
+	s3cmd put -P $< s3://fallout/
 
 fix-quotes:
 	sed -r -i -e "s/”/''/g" -e "s/“/\`\`/g"  fallout.tex

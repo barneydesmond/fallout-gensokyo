@@ -1,0 +1,72 @@
+\usepackage{enumitem}
+\usepackage[utf8]{inputenc}
+
+% Blank line between paragraphs, no leading indent
+\usepackage[parfill]{parskip}
+
+% Automatic linking
+\usepackage[pdftex,colorlinks=true]{hyperref}
+
+% Rich selection of colours
+\usepackage[usenames,dvipsnames]{xcolor}
+
+% Strikeout text
+\usepackage{soul}
+
+% Embed images
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+% Sane scaling
+\usepackage[export]{adjustbox}
+
+% Very slightly more relaxed spacing: http://en.wikibooks.org/wiki/LaTeX/Text_Formatting#Line_Spacing
+\usepackage{setspace}
+\setstretch{1.1}
+
+
+%\usepackage{pifont} % ding
+%\DeclareUnicodeCharacter {9320}{⑨}
+% http://tex.stackexchange.com/questions/73560/error-unicode-char-u8%CF%86-not-set-up-for-use-with-latex
+%
+% Circled numbers
+% http://tex.stackexchange.com/questions/7032/good-way-to-make-textcircled-numbers
+% http://tex.stackexchange.com/questions/15334/getting-numbers-to-appear-in-circles
+% I went with this in the end:
+\newcommand{\maru}[1]{\raisebox{.5pt}{\textcircled{\raisebox{-.9pt} {#1}}}}
+\newcommand{\vaultnine}{Vault \maru{9}}
+
+% Italicise proper names for emphasis, and prevent breaking across lines
+\newcommand{\propername}[1]{\mbox{\emph{#1}}}
+
+% At the end of each instalment Anon wrote commentary, and sometimes I'll include survey responses.
+% vfill: https://www.sharelatex.com/learn/Line_breaks_and_blank_spaces
+\newenvironment{commentary}%
+	{
+		\vfill%
+		\hrule%
+		\begin{footnotesize}%
+		\color{MidnightBlue}%
+	}%
+	{%
+		\end{footnotesize}%
+	}
+
+% Easy embedding of images
+% http://tex.stackexchange.com/questions/37790/scale-figure-to-a-percentage-of-textwidth
+% http://tex.stackexchange.com/questions/41787/use-textwidth-for-image-width-only-when-it-outgrows-the-page
+\newcommand{\img}[1]{%
+	\includegraphics[max width=0.75\linewidth]{#1}%
+}
+
+
+\newcommand{\factionheading}[1]{
+\parbox{\textwidth}{
+        \vspace{2mm}
+        \noindent
+        \textcolor{MidnightBlue}{
+{\large {#1}
+        \vspace*{1mm}
+        \hrule}
+        \vspace*{3mm}
+        \noindent
+} } }
