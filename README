@@ -3,3 +3,4 @@ to get a successful PDF build:
 
 * texlive-latex-base
 * texlive-latex-extra
+* texlive-fonts-recommended
